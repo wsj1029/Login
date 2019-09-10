@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:background="#D9D9D9"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="登录界面"
+        android:textSize="22sp"
+        android:gravity="center"/>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <EditText
+        android:drawableLeft="@mipmap/yonghu"
+        android:id="@+id/user_name"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape_corner_up"
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        android:hint="手机号或邮箱"/>
+
+
+    <EditText
+        android:inputType="textPassword"
+        android:drawableLeft="@mipmap/mima"
+        android:id="@+id/pass_word"
+        android:background="@drawable/shape_corner_down"
+        android:drawablePadding="8dp"
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        android:hint="密码"
+         />
+</LinearLayout>
+<LinearLayout
+    android:layout_marginTop="30dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <CheckBox
+        android:id="@+id/remember"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="记住我                                      "
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="登录遇到问题？"
+        android:textSize="18sp"
+        android:gravity="right" />
+
+</LinearLayout>
+
+
+    <Button
+        android:id="@+id/login"
+        android:background="@drawable/shape_corner"
+        android:layout_marginTop="20dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="登录"/>
+
+
+</LinearLayout>
